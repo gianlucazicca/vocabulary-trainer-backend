@@ -2,11 +2,11 @@
   "name": "vocabulary-trainer",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "node dist/app.js",
     "build": "tsc",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' server.ts",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
