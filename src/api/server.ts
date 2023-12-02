@@ -6,6 +6,9 @@ export class Server {
     private readonly _app: express.Application = express();
 
     public constructor() {
+        this._app.use(express.json());
+        this._app.use(express.urlencoded({ extended: true }));
+
         initRestRoutes(this._app);
     }
 
